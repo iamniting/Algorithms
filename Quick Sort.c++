@@ -3,9 +3,9 @@ using namespace std;
 
 int partition(int a[], int beg, int end)
 {
-    int pivot = a[end];
-    int start = beg;
-    
+	int pivot = a[end];
+	int start = beg;
+
 	for(int i=beg; i<end; i++)
 	{
 		if(a[i] <= pivot)
@@ -17,7 +17,7 @@ int partition(int a[], int beg, int end)
 			start++;
 		}
 	}
-    
+
 	//swap pivot element
 	int temp = a[start];
 	a[start] = a[end];
@@ -45,7 +45,7 @@ int main()
 	cin>>n;
 	
 	for(int i=0; i<n; i++)
-	  cin>>a[i];
+		cin>>a[i];
 
 	quick_sort(a, 0, n-1);
 

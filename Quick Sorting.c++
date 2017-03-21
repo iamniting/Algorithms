@@ -10,7 +10,7 @@ int partition(int a[], int beg, int end)
 	{
 		if(a[i] <= pivot)
 		{
-			///swap smallest elements with bigger elements
+			//swap smallest elements with bigger elements
 			int temp = a[start];
 			a[start] = a[i];
 			a[i] = temp;
